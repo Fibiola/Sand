@@ -16,6 +16,5 @@ def komplikator():
             return render_template('komplikator_error.html', message = "starost mora biti stevilka!")
     else:
         return render_template('komplikator_form.html')
-
 if __name__ == "__main__":
     app.run(debug = True)

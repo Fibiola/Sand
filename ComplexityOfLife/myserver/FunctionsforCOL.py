@@ -83,12 +83,12 @@ def calculate_moneyspent(money_spent):
 	else:
 		return  100
 
-def calculate_popularity(popularity_online):
-	if int(popularity_online) <= 10:
+def calculate_popularity(online_popularity):
+	if int(online_popularity) <= 10:
 		return 0
-	elif int(popularity_online) > 11 and int(popularity_online) <= 25:
+	elif int(online_popularity) > 11 and int(online_popularity) <= 25:
 		return 50
-	elif int(popularity_online) > 25 and int(popularity_online) <= 45:
+	elif int(online_popularity) > 25 and int(online_popularity) <= 45:
 		return 75
 	else:
 		return 100
@@ -102,8 +102,9 @@ def calculate_friends(rl_friends):
 		return 100
 
 #funkcija za izracun iz vec funkcij
-def calculate_score(calculate_gender, calculate_age, calculate_status, calculate_ignorance, calculate_money, calculate_moneywant, calculate_moneyspent, calculate_popularity, calculate_friends):
+def calculate_score(gender, age, status, ignorance, money_have, money_wants, money_spent, online_popularity, rl_friends):
 	possibleperc = 900
 	result = int(calculate_gender) + int(calculate_age)+ int(calculate_status) + int(calculate_ignorance) + int(calculate_money)+ int(calculate_moneywant)+ int(calculate_moneyspent) + int(calculate_popularity) + int(calculate_friends)
 	percent = float(result) / possibleperc * 100
 	return result
+
