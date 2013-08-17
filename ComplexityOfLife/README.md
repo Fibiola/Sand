@@ -1,4 +1,4 @@
 # Complexity of Life Calculator web app
-This is a handy tool to evaluate complexity of your life on scientifically proven determinants.  
+This is a handy tool capeable of eveluating complexity of one’s life based on scientifically proven determinants that user inputs.  
 
-## made with Flask & very basic Python
+### made with help of Flask and Codecatz

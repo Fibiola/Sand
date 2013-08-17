@@ -1,13 +1,3 @@
-gender = "female"
-age = "20"
-status = "single"
-ignorance = "aware"
-money_have = "10000"
-money_wants = "1000"
-money_spent = "1000"
-online_popularity = "40"
-rl_friends = "100"
-
 
 #funkcija za gender
 def calculate_gender(gender):
@@ -20,7 +10,7 @@ def calculate_gender(gender):
 def calculate_age(age):
 	if int(age) <= 10:
 		return 10
-	elif int(age) > 10 and int(age)<= 20 :
+	elif int(age) > 10 and int(age)<= 20:
 		return 100
 	elif int(age) > 20 and int(age) <= 35:
 		return 20
@@ -70,7 +60,7 @@ def calculate_money(money_have):
 		return 0
 
 def calculate_moneywant(money_wants):
-	if int(money_wants) <= int(money_have) :
+	if int(money_wants) < 500:
 		return 0
 	else:
 		if int(money_wants) < 3000:
