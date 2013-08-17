@@ -1,3 +1,14 @@
+gender = "female"
+age = "20"
+status = "single"
+ignorance = "aware"
+money_have = "10000"
+money_wants = "1000"
+money_spent = "1000"
+online_popularity = "40"
+rl_friends = "100"
+
+
 #funkcija za gender
 def calculate_gender(gender):
 	if gender.lower() == "female" or gender.lower() == "f" or gender.lower() == "girl" or gender.lower() == "woman":
@@ -104,7 +115,7 @@ def calculate_friends(rl_friends):
 #funkcija za izracun iz vec funkcij
 def calculate_score(gender, age, status, ignorance, money_have, money_wants, money_spent, online_popularity, rl_friends):
 	possibleperc = 900
-	result = int(calculate_gender) + int(calculate_age)+ int(calculate_status) + int(calculate_ignorance) + int(calculate_money)+ int(calculate_moneywant)+ int(calculate_moneyspent) + int(calculate_popularity) + int(calculate_friends)
+	result = calculate_gender(gender) + calculate_age(age) + calculate_status(status) + calculate_ignorance(ignorance) + calculate_money(money_have) + calculate_moneywant(money_wants) + calculate_moneyspent(money_spent) + calculate_popularity(online_popularity) + calculate_friends(rl_friends)
 	percent = float(result) / possibleperc * 100
-	return result
+	return percent
 

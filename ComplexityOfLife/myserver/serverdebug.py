@@ -17,9 +17,7 @@ def komplikator():
         rl_friends = request.form['rl_friends']
 
         if age.isdigit() and money_have.isdigit() and money_spent.isdigit() and money_wants.isdigit() and online_popularity.isdigit() and rl_friends.isdigit():
-            return render_template('komplikator_result.html', complexity = calculate_score(int(gender), int(age), int(status), int(ignorance), int(money_have), int(money_wants), int(money_spent), int(online_popularity), int(rl_friends)))
-        else:
-            return render_template('komplikator_error.html', message = "Age, Ignorance, Money have, Money wants, Money spent and Klout score must be digits without special signs!")
+            return render_template('komplikator_result.html', complexity = calculate_score(int(gender), int(age), int(status), int(ignorance), int(money_have), int(money_wants), int(money_spent), int(online_popularity), int(rl_friends)))  
     else:
         return render_template('komplikator_form.html')
 
