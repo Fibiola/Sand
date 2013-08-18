@@ -22,9 +22,9 @@ print text.find("zip", first_app + 1)
 
 # ROUNDING NUMBERS
 
-# Given a variable, x, that stores the 
-# value of any decimal number, write Python 
-# code that prints out the nearest whole 
+# Given a variable, x, that stores the
+# value of any decimal number, write Python
+# code that prints out the nearest whole
 # number to x.
 # If x is exactly half way between two
 # whole numbers, round up, so
@@ -37,11 +37,11 @@ print text.find("zip", first_app + 1)
 # Along with the str function, this problem can be solved
 # using just the information introduced in unit 1.
 
-# x = 3.14159 
+# x = 3.14159
 # >>> 3 (not 3.0)
-# x = 27.63 
+# x = 27.63
 # >>> 28 (not 28.0)
-# x = 3.5 
+# x = 3.5
 # >>> 4 (not 4.0)
 
 x = 3.14159
@@ -65,7 +65,7 @@ print string[:decimal]
 def find_second(search,target):
 	first = search.find(target)
 	return search.find(target, first + 1)
-    	
+
 
 
 danton = "De l'audace, encore de l'audace, toujours de l'audace"
@@ -122,15 +122,15 @@ print biggest(9, 3, 9)
 
 # UNIT 2 - Loops
 # we check if i is smaller than 10, if it is it prints it, then executes
-# the code bellow and checks if new value is smaller than 10, and prints it 
+# the code bellow and checks if new value is smaller than 10, and prints it
 # until its true.
-i = 0 
+i = 0
 while i < 10:
 	print i
 	i = i + 1
 
 # Define a procedure, print_numbers, that takes
-# as input a positive whole number, and prints 
+# as input a positive whole number, and prints
 # out all the whole numbers from 1 to the input
 # number.
 
@@ -142,7 +142,7 @@ def print_numbers(a):
     while i != a:
         i = i + 1
         print i
-    
+
 print_numbers(3)
 #>>> 1
 #>>> 2
@@ -173,3 +173,19 @@ print factorial(5)
 #>>> 120
 print factorial(6)
 #>>> 720
+
+#Using break
+def print_numbers(n):
+	i = 1
+	while i <= n:
+		print i
+		i = i + 1
+
+#same as
+
+i = 1
+while True:
+	if i>n:
+		break
+	print i
+	i = i + 1
