@@ -1,0 +1,13 @@
+div {
+    height: 100px;
+    width: 100px;
+    background-color: #4ECDC4;
+    border-radius: 20px;
+    display: inline-block;
+}
+
+p {
+    border: dashed 10px;
+    font-family: Open sans;
+    text-align: center;
+}
