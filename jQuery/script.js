@@ -70,3 +70,9 @@ $(document).ready(function() {
         }
     });
 });
+
+// draggable car - click and move around
+
+$(document).ready(function(){
+    $("#car").draggable();
+});
