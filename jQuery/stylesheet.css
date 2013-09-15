@@ -12,6 +12,15 @@
     text-align: center;
 }
 
+
+.cool {
+    height: 30px;
+    width: 30px;
+    background-color: #F4BAEF;
+    border-radius: 20px;
+    display: inline-block;
+}
+
 .bodi {
     margin:0 auto;
     padding:0;
@@ -58,4 +67,42 @@ a:hover{
 }
 .pull-me p {
     text-align:center;
+}
+
+h2 {
+    font-family: Open sans;
+}
+
+form {
+    display: inline-block;
+}
+
+#button{
+    display: inline-block;
+    height:20px;
+    width:70px;
+    background-color:#000000;
+    font-family:arial;
+    font-weight:bold;
+    color:#ffffff;
+    border-radius: 20px;
+    text-align:center;
+    margin-top:2px;
+}
+
+.list {
+    font-family:Open sans;
+    color:#000000;
+}
+
+.todo {
+    font-family: Open sans;
+
+}
+
+/* the super mario css */
+img {
+    position: relative;
+    left: 500;
+    top: 0;
 }
