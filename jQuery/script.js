@@ -14,7 +14,7 @@ $(document).ready(function() {
 
 $(document).ready(function() {
     $('.cool').mouseenter(function(){
-        $(this).toggleClass("wtf");
+        $(this).fadeTo('fast', 100);
     });
 });
 
